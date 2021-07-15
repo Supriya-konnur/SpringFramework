@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation=" http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans.xsd
+	http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+
+<bean id="tv" class="com.xworkz.samsung.bean.TVBean">
+<property name="tvId" value="2"></property>
+<property name="name" value="Samsung"></property>
+<property name="inches" value="42"></property>
+<property name="moduleNo" value="4232"></property>
+<property name="remote" ref="remoteBean"></property>
+
+</bean>
+
+<bean id="remoteBean" class="com.xworkz.samsung.bean.RemoteBean">
+<property name="remoteId" value="56"></property>
+<property name="color" value="black"></property>
+<property name="range" value="5"></property>
+<property name="noOfButtons" value="25"></property>
+
+</bean>
+
+</beans>
