@@ -49,3 +49,5 @@ public class SoapDTO implements Serializable{
 	@Column(name="quantity")
 	private int quantity;
 }
+
+
