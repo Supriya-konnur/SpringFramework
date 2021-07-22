@@ -1,4 +1,4 @@
-package com.xworkz.ice_cream.dto;
+package com.xworkz.ice_cream.dao;
 
 import java.util.List;
 
@@ -9,7 +9,7 @@ import org.hibernate.query.Query;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import com.xworkz.ice_cream.dao.IceCreamDAO;
+import com.xworkz.ice_cream.dto.IceCreamDTO;
 @Component
 public class IceCreamDAOImpl implements IceCreamDAO{
 
