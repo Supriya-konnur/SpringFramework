@@ -11,7 +11,6 @@ import javax.persistence.NamedQuery;
 import javax.persistence.Table;
 
 import org.hibernate.annotations.GenericGenerator;
-import org.springframework.stereotype.Component;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -28,13 +27,13 @@ import lombok.ToString;
 	})
 
 
-@Table(name="icecream")
+@Table(name="icecream_detail")
 @Getter
 @Setter
 @ToString
 @NoArgsConstructor
 
-@Component
+
 public class IceCreamDTO implements Serializable{
 	@Id
 	@GenericGenerator(name="auto" ,strategy = "increment")

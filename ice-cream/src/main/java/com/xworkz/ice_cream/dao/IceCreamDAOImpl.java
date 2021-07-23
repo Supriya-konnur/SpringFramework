@@ -19,6 +19,7 @@ public class IceCreamDAOImpl implements IceCreamDAO{
 	public void save(IceCreamDTO creamDTO) {
 		Session session = null;
 		try {
+			System.out.println("in DAO impl");
 			session = factory.openSession();
 			session.beginTransaction();
 			session.save(creamDTO);

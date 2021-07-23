@@ -13,9 +13,11 @@ public class IceCreamServiceImpl implements IceCreamService{
 	@Autowired
 	private IceCreamDAO cDAO;
 	
+	
 	@Override
 	public void validateAndSave(IceCreamDTO creamDTO) {
 		if(creamDTO!=null) {
+			System.out.println("in service impl");
 			cDAO.save(creamDTO);
 		}
 		else {

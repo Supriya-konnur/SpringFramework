@@ -10,7 +10,7 @@ public class IceCreamTester {
 
 	public static void main(String[] args) {
 
-		ApplicationContext applicationContext = new ClassPathXmlApplicationContext("resources/context.xml");
+		ApplicationContext applicationContext = new ClassPathXmlApplicationContext("context.xml");
 		
 		IceCreamDTO dto = new IceCreamDTO();
 		dto.setName("American dry nuts");
