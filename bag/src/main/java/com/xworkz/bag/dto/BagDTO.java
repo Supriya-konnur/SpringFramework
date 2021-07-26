@@ -35,4 +35,5 @@ public class BagDTO implements Serializable{
 	
 	@Column(name="price")
 	private String price;
+	
 }
