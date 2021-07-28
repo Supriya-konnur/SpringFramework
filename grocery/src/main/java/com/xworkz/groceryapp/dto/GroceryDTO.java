@@ -33,4 +33,5 @@ public class GroceryDTO implements Serializable{
 	private String groceryPrice;
 	@Column(name="mfgdate")
 	private String mfgDate;
+	
 }
