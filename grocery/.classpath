@@ -24,15 +24,5 @@
 			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="E:/jarFiles/spring/lib/lib/commons-logging.jar"/>
-	<classpathentry kind="lib" path="E:/jarFiles/spring/lib/lib/spring-aop-4.2.2.RELEASE.jar"/>
-	<classpathentry kind="lib" path="E:/jarFiles/spring/lib/lib/spring-beans-4.2.2.RELEASE.jar"/>
-	<classpathentry kind="lib" path="E:/jarFiles/spring/lib/lib/spring-context-4.2.2.RELEASE.jar"/>
-	<classpathentry kind="lib" path="E:/jarFiles/spring/lib/lib/spring-core-4.2.2.RELEASE.jar"/>
-	<classpathentry kind="lib" path="E:/jarFiles/spring/lib/lib/spring-expression-4.2.2.RELEASE.jar"/>
-	<classpathentry kind="lib" path="E:/jarFiles/spring/lib/lib/spring-instrument-4.2.2.RELEASE.jar"/>
-	<classpathentry kind="lib" path="E:/jarFiles/spring/lib/lib/spring-jdbc-4.2.2.RELEASE.jar"/>
-	<classpathentry kind="lib" path="E:/jarFiles/spring/lib/lib/spring-web-4.2.2.RELEASE.jar"/>
-	<classpathentry kind="lib" path="E:/jarFiles/spring/lib/lib/spring-webmvc-4.2.2.RELEASE.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
