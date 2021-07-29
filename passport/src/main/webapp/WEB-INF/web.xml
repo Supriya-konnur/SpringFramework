@@ -7,7 +7,7 @@
 
 	<display-name>Archetype Created Web Application</display-name>
 	<welcome-file-list>
-		<welcome-file>grocery.jsp</welcome-file>
+		<welcome-file>PassportRegistration.jsp</welcome-file>
 
 	</welcome-file-list>
 	<servlet>

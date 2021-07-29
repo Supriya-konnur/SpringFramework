@@ -9,9 +9,9 @@
 
 
 	<context:component-scan
-		base-package="com.xworkz.groceryapp"></context:component-scan>
+		base-package="com.xworkz.passportapp"></context:component-scan>
 
-	<bean id="gro"
+	<bean id="pass"
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<context:property-placeholder
 			location="/WEB-INF/db.properties" />
@@ -34,7 +34,7 @@
 		<property name="dataSource" ref="driverManagerDataSource"></property>
 		<property name="annotatedClasses">
 			<list>
-				<value>com.xworkz.groceryapp.dto.GroceryDTO</value>
+				<value>com.xworkz.passportapp.dto.PassportDTO</value>
 			</list>
 		</property>
 		<property name="hibernateProperties">

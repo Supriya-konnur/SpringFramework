@@ -21,9 +21,9 @@ public class GroceryController {
 	@Autowired
 	private GroceryService groceryService;
 	
-//	@PostMapping("/grocery.all")
+	@PostMapping("/grocery.all")
 	
-	@RequestMapping(value="/grocery.all" ,method=RequestMethod.POST )
+//	@RequestMapping(value="/grocery.all" ,method=RequestMethod.POST )
 	
 	public ModelAndView saveGroceryDetails(@ModelAttribute GroceryDTO dto) {
 		if(!dto.getGroceryName().isEmpty() && dto.getGroceryName() != null) {
