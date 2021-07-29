@@ -20,11 +20,11 @@ public class PassportLoginController {
 	@PostMapping("/registration.all")
 	
 	public ModelAndView createPassportDetails(@ModelAttribute PassportDTO dto) {
-		if(dto != null && !dto.getLoginId().isEmpty() && !dto.getEmailId().isEmpty()) {
+		if(dto != null && !dto.getLoginId().isEmpty() && !dto.getPassword().isEmpty()) {
 			return new ModelAndView("PassportLogin", "msg" ,"Thank you");
 		}
 		else {
-			return new ModelAndView("PassportLogin", "msg" ,"Please Enter the e-mail Id ");
+			return new ModelAndView("PassportLogin", "msg" ,"Please Enter the Login Id and password ");
 		}
 	}
 	
