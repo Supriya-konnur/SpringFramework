@@ -6,4 +6,6 @@ public interface PassportDAO {
 
 	boolean persistPassportDetails(PassportDTO passportDTO);
 
+	public Boolean verifyDetails(String loginId, String password);
+
 }

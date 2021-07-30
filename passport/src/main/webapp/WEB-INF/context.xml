@@ -11,12 +11,11 @@
 	<context:component-scan
 		base-package="com.xworkz.passportapp"></context:component-scan>
 
+	<context:property-placeholder
+		location="/WEB-INF/db.properties" />
+
 	<bean id="pass"
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-		<context:property-placeholder
-			location="/WEB-INF/db.properties" />
-
-
 		<property name="prefix">
 			<value>/</value>
 		</property>
@@ -24,7 +23,6 @@
 			<value>.jsp</value>
 
 		</property>
-
 
 	</bean>
 

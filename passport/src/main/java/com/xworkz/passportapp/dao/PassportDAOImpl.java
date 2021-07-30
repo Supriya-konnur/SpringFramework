@@ -3,6 +3,7 @@ package com.xworkz.passportapp.dao;
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
+import org.hibernate.query.Query;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
@@ -43,6 +44,39 @@ public class PassportDAOImpl implements PassportDAO{
 		}
 		
 		return false;
+	}
+
+	@Override
+	public Boolean verifyDetails(String loginId, String password) {
+		Session session = null;
+		PassportDTO pDTO = null;
+		try {
+			session = factory.openSession();
+			Query qry = session.getNamedQuery("verifyDetails");
+			qry.setParameter("lid", loginId);
+			qry.setParameter("cpas", password);
+			
+			
+			 pDTO= (PassportDTO) qry.uniqueResult();
+			if(pDTO!=null&&pDTO.getLoginId().equalsIgnoreCase(loginId)&& pDTO.getPassword().equalsIgnoreCase(password)) {
+				return true;
+			}
+			else {
+				return false;
+			}
+			
+		
+			
+			
+		}catch (HibernateException e) {
+			e.printStackTrace();
+			
+		}finally {
+			if(session!=null) {
+				session.close();
+			}
+		}
+		return null;
 	}
 
 	

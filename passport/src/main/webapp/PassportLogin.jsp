@@ -8,11 +8,14 @@
 </head>
 <body>
 <h3>${ msg }</h3>
-<form action="registration.all" method="post">
+<h3 style="color: white; font-family: cursive;font-weight: bolder;"> WELCOME TO PASSPORT SEVA</h3>
+<form action="login.all" method="post">
 <pre>
-Login Id <input type="text" name="loginId">
-Password <input type="password" name="password">
+Login Id <input type="text" name="loginId" placeholder="Login Id" required="required">
+Password <input type="password" name="password" placeholder="Password" required="required">
+<button type="submit">Sign in</button>
 </pre>
 </form>
+<p style="color: white;">Don't have an account? <a href="PassportUserRegistration.jsp">Sign up here!</a></p>
 </body>
 </html>

@@ -7,6 +7,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.NamedQueries;
+import javax.persistence.NamedQuery;
 import javax.persistence.Table;
 
 import lombok.Getter;
@@ -14,6 +16,13 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
 @Entity
+
+@NamedQueries(value = {
+		
+		@NamedQuery(name = "verifyDetails", query = "SELECT dto from PassportDTO dto where loginId=:lid AND confirm_password=:cpas")
+		
+})
+
 @Table(name="passport_details")
 
 @Getter
